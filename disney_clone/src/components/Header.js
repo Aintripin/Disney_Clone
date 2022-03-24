@@ -64,16 +64,38 @@ const NavMenu = styled.div`
         align-items: center;
         padding: 0 12px;            // 0 top & o bottom; 12 px letf & right
         cursor: pointer;
-    }
+    
 
-    img { 
-        height: 20px;
-    }
+        img { 
+            height: 20px;
+        }
 
-    span {
-        font-size: 13px;
-        letter-spacing: 1.42px;
+        span {
+            font-size: 13px;
+            letter-spacing: 1.42px;
+            position: relative;
 
+            &:after {
+                content: "";
+                height: 2px;
+                background: white;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -6px;
+                opacity: 0;
+                transform-origin: left center;
+                transition: all 250ms cubic-bezier(.25, .46, .45, .94) 0s;
+                transform: scaleX(0);
+            }
+        }
+
+        &:hover {
+            span:after {
+                transform: scaleX(1);
+                opacity: 1;
+            }
+        }
     }
 `
 
