@@ -17,11 +17,15 @@ function App() {
     <div className="App">
     <Router>
       <Header />
+
       <Switch>
-        <Route path = "./detail">
+        <Route path = "/detail">
           <Detail />
         </Route>
-        <Route path = "./">
+      </Switch>
+
+      <Switch>
+        <Route path = "/">
           <Home />
         </Route>
       </Switch>
