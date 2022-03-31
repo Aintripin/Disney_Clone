@@ -18,10 +18,10 @@ function ImgSlider() {
     return (
         <Carousel {...settings}>
             <Wrap>
-                <img src = "../../public/images/Aintripin_logo.png" alt = "slider" />
+                <img src = "../images/slider-badging.jpg" alt = "slider-slide" />
             </Wrap>
             <Wrap>
-                <img src = "./slider-badging.jpg" alt = "slider" />
+                <img src = "../images/slider-badging.jpg" alt = "slider" />
             </Wrap>
         </Carousel>
     )
@@ -30,9 +30,12 @@ function ImgSlider() {
 export default ImgSlider
 
 const Carousel = styled(Slider)`
-
+    margin-top: 20px;
 `
 
 const Wrap = styled.div`
-
+    img {
+        width: 100%;
+        height: 100%;
+    }
 `
