@@ -18,10 +18,10 @@ function ImgSlider() {
     return (
         <Carousel {...settings}>
             <Wrap>
-                <img src = "../../public/images/slider-badging.jpg" alt = "slider" />
+                <img src = "../../public/images/Aintripin_logo.png" alt = "slider" />
             </Wrap>
             <Wrap>
-                <img src = "../../public/images/slider-badging.jpg" alt = "slider" />
+                <img src = "./slider-badging.jpg" alt = "slider" />
             </Wrap>
         </Carousel>
     )
