@@ -18,6 +18,7 @@ const Container = styled.main`
     padding: 0 calc(3.5vw + 5px);           // top & bottom are 0px and left & right are calc()
     // background-color: blue;
     position: relative;
+    overflow-x: hidden;                     // hide the overflow so the page won't have the horizontal slider
 
     &:before {
         background: url("./images/home-background.png") center center / cover no-repeat fixed;     

@@ -46,6 +46,8 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;            // center the items vertically
     padding: 0 36px;                // 0 top & bottom; 36px left & right
+
+    overflow-x: hidden;             // hide the overflow so the page won't have the horizontal slider
 `
 
 const Logo = styled.img`
