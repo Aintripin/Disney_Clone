@@ -33,11 +33,9 @@ function App() {
           <Home />
         </Route>
 
-
       </Switch>
       
     </Router>
-      {/* <Home /> */}
     </div>
   );
 }
