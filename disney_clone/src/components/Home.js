@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'        // useEffect allows us to grab the movies 
 import styled from "styled-components"
 import ImgSlider from './ImgSlider'
 import Viewers from './Viewers'
 import Movies from './Movies'
+// import firebase from "firebase" 
+// import db from './firebase'
+// import db from './firebase.js'   
+// import firebase from '../firebase'
+// import default db from "./firebase"
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import db from "firebase/database";
 
 function Home() {
+
+    // useEffect(() => {
+    //     console.log("SAY");
+    // }, []);
+
     return (
         <Container>
             <ImgSlider />

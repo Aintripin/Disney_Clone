@@ -12,6 +12,7 @@ import {
   Link
 } from "react-router-dom";
 import Detail from "./components/Detail";
+// import { useEffect } from 'react';
 
 function App() {
   return (
