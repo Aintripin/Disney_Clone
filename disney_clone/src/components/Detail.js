@@ -106,6 +106,10 @@ const PlayButton = styled.button`
 
     &:hover {
         background: rgb(198, 198, 198);
+
+        img {
+            content: url("../images/play-icon-black.png");
+        }
     }
 
 `
