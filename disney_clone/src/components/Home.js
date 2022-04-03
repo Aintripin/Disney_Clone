@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'        // useEffect allows us to grab the movies 
+import React, { useEffect, useState, useReducer } from 'react'        // useEffect allows us to grab the movies 
 import styled from "styled-components"
 import ImgSlider from './ImgSlider'
 import Viewers from './Viewers'
@@ -8,16 +8,27 @@ import Movies from './Movies'
 // import db from './firebase.js'   
 // import firebase from '../firebase'
 // import default db from "./firebase"
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
-import db from "firebase/database";
+
+
+// import firebase from 'firebase/compat/app';
+// import 'firebase/compat/auth';
+// import 'firebase/compat/firestore';
+// import db from "firebase/Database";
+
+import db from "firebase";
 
 function Home() {
 
     // useEffect(() => {
-    //     console.log("SAY");
-    // }, []);
+    //     console.log("SAY!");
+    // }, [])
+
+
+    // useEffect(() => {
+    //     db.collection("movies").onSnapshot((snapshot)=> {
+    //         console.log(snapshot);
+    //     })
+    // }, [])
 
     return (
         <Container>

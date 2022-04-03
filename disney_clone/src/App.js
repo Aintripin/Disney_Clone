@@ -12,9 +12,16 @@ import {
   Link
 } from "react-router-dom";
 import Detail from "./components/Detail";
-// import { useEffect } from 'react';
+import db from "firebase";
+import { useEffect } from 'react';
 
 function App() {
+
+  // useEffect(() => {
+  //   db.collection("movies").onSnapshot((snapshot)=> {
+  //       console.log(snapshot);
+  //   });
+  // }, [])
   return (
     <div className="App">
     <Router>
