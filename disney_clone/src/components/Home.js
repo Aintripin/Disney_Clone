@@ -10,12 +10,13 @@ import Movies from './Movies'
 // import default db from "./firebase"
 
 
-// import firebase from 'firebase/compat/app';
-// import 'firebase/compat/auth';
-// import 'firebase/compat/firestore';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
 // import db from "firebase/Database";
+import database from "firebase/Database";
 
-import db from "firebase";
+// import db from "firebase";
 
 function Home() {
 
@@ -24,11 +25,13 @@ function Home() {
     // }, [])
 
 
-    // useEffect(() => {
-    //     db.collection("movies").onSnapshot((snapshot)=> {
-    //         console.log(snapshot);
-    //     })
-    // }, [])
+    useEffect(() => {
+        database.collection("movies").onSnapshot((snapshot)=> {
+            console.log(snapshot);
+        })
+    }, [])
+
+    // console.log("SAY!");
 
     return (
         <Container>
